@@ -1,0 +1,10 @@
+<div>
+  <h2>User App, Title: {{title}}</h2>
+  <button (click) = "handleClick()">Refresh</button>
+  <div *ngIf = "usersArray">
+    <p *ngFor = "let u of usersArray">
+      Hello {{u.name}}, your id: {{u._id}}, 
+      your dob: {{u.dob}}
+    </p>
+  </div>
+</div>
